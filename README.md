@@ -7,7 +7,7 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/podobaas/DevToAPI?color=green&style=flat">
 </h2>
 
-## Demo
+## Demo video on YouTube
 [![Demo](https://img.youtube.com/vi/-FZZ0IZzTEY/0.jpg)](https://www.youtube.com/embed/-FZZ0IZzTEY)
 
 ## Installation
