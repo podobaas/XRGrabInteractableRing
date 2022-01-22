@@ -7,6 +7,11 @@
 <img alt="GitHub" src="https://img.shields.io/github/license/podobaas/DevToAPI?color=green&style=flat">
 </h2>
 
+##About
+This little package will help you add an indicator for grabbable objects. It is made for the Unity XR Interaction Toolkit as a small addition to its functionality.
+
+**This package depends on the Unity XR Interaction Toolkit!**
+
 ## Demo video on YouTube
 [![Demo](https://img.youtube.com/vi/-FZZ0IZzTEY/0.jpg)](https://www.youtube.com/embed/-FZZ0IZzTEY)
 
