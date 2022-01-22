@@ -1,19 +1,16 @@
 using System.Collections;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace XR.Extensions.Interactable
 {
-    
     [RequireComponent(typeof(XRGrabInteractable))]
     [RequireComponent(typeof(Collider))]
     public class XRGrabInteractableRing : MonoBehaviour
     {
-        [Header("General")] 
-        [SerializeField] [Tooltip("Main camera")]
-        private Camera _camera;
-        
+        [Header("General")]
         [SerializeField]
         [Tooltip("The prefab of a ring")]
         private GameObject _modelPrefab;
@@ -75,10 +72,18 @@ namespace XR.Extensions.Interactable
         private XRGrabInteractable _grabInteractable;
         private Collider _collider;
         private bool _isSelected;
+        private Camera _camera;
 
         private void Awake()
         {
             _grabInteractable = GetComponent<XRGrabInteractable>();
+            _camera = FindObjectOfType<XROrigin>()?.Camera;
+
+            if (_camera == null)
+            {
+                Debug.LogError("Camera can't be null!");
+                return;
+            }
 
             if (_modelPrefab == null)
             {

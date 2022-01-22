@@ -25,7 +25,6 @@ This little package will help you add an indicator for grabbable objects. It is 
 ## Properties
 | Name  | Value |
 | ------------- | ------------- |
-| Camera | Rig camera (main camera) |
 | Model Prefab | Ring model from Prefabs folder or your custom model|
 | Color | Model color |
 | Transform type  | Self: The ring will be placed in the center of the object. Custom: Custom attach transform |
